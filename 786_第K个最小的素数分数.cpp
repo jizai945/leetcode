@@ -36,7 +36,7 @@ struct node {
 
 struct cmp {
     bool operator() (const node &a, const node &b) {
-        return (a.x*1.0/a.y) > (b.x*1.0/b.y);
+        return a.x*b.y > b.x*a.y;
     }
 };
 
