@@ -71,7 +71,10 @@ public:
             for (int j = 0; j < n; j++) {
                 // cout << i << " " << j << " "  << state[i][j] << endl;
                 if (state[i][j] == 3) {
-                    ans.push_back({i, j});
+                    vector<int> tmp;
+                    tmp.emplace_back(i);
+                    tmp.emplace_back(j);
+                    ans.emplace_back(tmp);
                 }
             }
         }
